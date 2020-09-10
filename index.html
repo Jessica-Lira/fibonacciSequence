@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci generator</title>
+
+    <script>
+
+        function fibonacciGenerator(n){
+            let output = [];
+ 
+            for (let i = 0; i < n; i++) {
+                if (i === 0) {
+                    output.push(0);
+                } else if (i === 1) {
+                    output.push(1);
+                } else {
+                    output.push(output[i - 2] + output[i - 1]);
+                } 
+            }
+            return output;
+        }
+        
+        fibonacciGenerator(5);
+        
+        console.log(fibonacciGenerator(5));
+        
+    </script>
+</head>
+<body>
+    <h1>Fibonacci sequence</h1>
+    <p> Write a JavaScript program to get the first n Fibonacci numbers.</p>
+    <p> Note: The Fibonacci Sequence is the series of numbers:</p> 
+    <p> <strong>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, . . . </strong></p>
+    <p> Each subsequent number is the sum of the previous two.</p>
+
+    <br>
+    <p>Flowchart</p>
+    <img src="logic.png" alt="thinking flowchart">
+</body>
+</html>
